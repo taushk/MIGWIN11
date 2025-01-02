@@ -1,3 +1,4 @@
+Remove-Item -Path C:\lci\migration_report.txt -Force
 #Requires -Version 5.1
 <#
 .SYNOPSIS
