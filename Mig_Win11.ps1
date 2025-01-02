@@ -1,4 +1,3 @@
-Remove-Item -Path C:\lci\migration_report.txt -Force
 #Requires -Version 5.1
 <#
 .SYNOPSIS
@@ -479,6 +478,7 @@ process {
         }
     }
     # Print Return Result
+    Remove-Item -Path C:\lci\migration_report.txt -Force
     $outputFilePath = "c:\lci\migration_report.txt"
     $message = "Result: $($Result.returnResult)"
 $message | Out-File -FilePath $outputFilePath -Append
